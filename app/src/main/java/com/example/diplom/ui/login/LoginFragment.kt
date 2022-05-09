@@ -83,8 +83,8 @@ class LoginFragment : Fragment() {
         }
 
         binding.registrationTextView.setOnClickListener {
-
-            navController.navigate(LoginFragmentDirections.actionLoginFragmentToRegistrationFragment())
+            requireActivity().supportFragmentManager.beginTransaction()
+                .replace(R.id.container, RegistrationFragment()).commit()
         }
 
         binding.loginEditText.addTextChangedListener(ValidationTextWatcher {

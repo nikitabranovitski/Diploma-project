@@ -9,6 +9,8 @@ import androidx.navigation.findNavController
 import com.example.diplom.R
 import com.example.diplom.databinding.ActivityMainBinding
 import com.example.diplom.ui.home.HomeActivity
+import com.example.diplom.ui.login.LoginFragment
+import com.example.diplom.ui.registration.RegistrationFragment
 import com.google.firebase.auth.FirebaseAuth
 import dagger.hilt.android.AndroidEntryPoint
 import dagger.hilt.android.HiltAndroidApp
@@ -37,8 +39,8 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, HomeActivity::class.java))
             finish()
         } else {
-            navController = findNavController(R.id.container)
-            navController.graph = navController.navInflater.inflate(R.navigation.navigation_authorization)
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.container, LoginFragment()).commit()
         }
     }
 }
