@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "917442546737",
+    "firebase_url": "https://diplom-bafa5-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "diplom-bafa5",
+    "storage_bucket": "diplom-bafa5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:917442546737:android:d11cae37275901f90d5910",
+        "android_client_info": {
+          "package_name": "com.example.diplom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "917442546737-kehe79kt6h1t9cvl6p9m1p143gcj346i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.diplom",
+            "certificate_hash": "569b2d9af6a9411dda4a4f39d82710b20544ad22"
+          }
+        },
+        {
+          "client_id": "917442546737-sq47nhh32j3vt2r0pt8j48jdf3m1otaf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCp5aCT2zLB5t06m96MlvBlPAo7NxfQozM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "917442546737-sq47nhh32j3vt2r0pt8j48jdf3m1otaf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

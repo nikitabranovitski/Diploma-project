@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/mallName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/info_mall_name_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="name" />
+
+        <ImageView
+            android:id="@+id/mallImage"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mallName"
+            tools:src="@drawable/red_marker" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="all"
+            android:padding="@dimen/info_text_padding"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mallImage"
+            tools:text="address" />
+
+        <ImageView
+            android:layout_width="@dimen/info_icons_size"
+            android:layout_height="@dimen/info_icons_size"
+            android:layout_marginEnd="@dimen/info_icons_marginEnd"
+            android:src="@drawable/ic_address"
+            app:layout_constraintEnd_toStartOf="@+id/instagram"
+            app:layout_constraintTop_toBottomOf="@id/mallImage" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="all"
+            android:padding="@dimen/info_text_padding"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/address"
+            tools:text="email" />
+
+        <ImageView
+            android:layout_width="@dimen/info_icons_size"
+            android:layout_height="@dimen/info_icons_size"
+            android:layout_marginEnd="@dimen/info_icons_marginEnd"
+            android:src="@drawable/ic_email"
+            app:layout_constraintEnd_toStartOf="@+id/instagram"
+            app:layout_constraintTop_toBottomOf="@id/address" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="all"
+            android:padding="@dimen/info_text_padding"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/email"
+            tools:text="phone" />
+
+        <ImageView
+            android:layout_width="@dimen/info_icons_size"
+            android:layout_height="@dimen/info_icons_size"
+            android:layout_marginEnd="@dimen/info_icons_marginEnd"
+            android:src="@drawable/ic_phone"
+            app:layout_constraintEnd_toStartOf="@+id/instagram"
+            app:layout_constraintTop_toBottomOf="@id/email" />
+
+        <TextView
+            android:id="@+id/website"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="all"
+            android:padding="@dimen/info_text_padding"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/phone"
+            tools:text="website" />
+
+        <ImageView
+            android:layout_width="@dimen/info_icons_size"
+            android:layout_height="@dimen/info_icons_size"
+            android:layout_marginEnd="@dimen/info_icons_marginEnd"
+            android:src="@drawable/ic_website"
+            app:layout_constraintEnd_toStartOf="@+id/instagram"
+            app:layout_constraintTop_toBottomOf="@id/phone" />
+
+        <TextView
+            android:id="@+id/vk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="all"
+            android:padding="@dimen/info_text_padding"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/website"
+            tools:text="vk" />
+
+        <ImageView
+            android:layout_width="@dimen/info_icons_size"
+            android:layout_height="@dimen/info_icons_size"
+            android:layout_marginEnd="@dimen/info_icons_marginEnd"
+            android:src="@drawable/ic_vk"
+            app:layout_constraintEnd_toStartOf="@+id/instagram"
+            app:layout_constraintTop_toBottomOf="@id/website" />
+
+        <TextView
+            android:id="@+id/instagram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="all"
+            android:padding="@dimen/info_text_padding"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/vk"
+            tools:text="instagram" />
+
+        <ImageView
+            android:layout_width="@dimen/info_icons_size"
+            android:layout_height="@dimen/info_icons_size"
+            android:layout_marginEnd="@dimen/info_icons_marginEnd"
+            android:src="@drawable/ic_instagram"
+            app:layout_constraintEnd_toStartOf="@+id/instagram"
+            app:layout_constraintTop_toBottomOf="@id/vk" />
+
+        <TextView
+            android:id="@+id/facebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="all"
+            android:padding="@dimen/info_text_padding"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/instagram"
+            tools:text="facebook" />
+
+        <ImageView
+            android:layout_width="@dimen/info_icons_size"
+            android:layout_height="@dimen/info_icons_size"
+            android:layout_marginEnd="@dimen/info_icons_marginEnd"
+            android:src="@drawable/ic_facebook"
+            app:layout_constraintEnd_toStartOf="@+id/instagram"
+            app:layout_constraintTop_toBottomOf="@id/instagram" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

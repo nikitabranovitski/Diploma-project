@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MyCardViewStyle" parent="Theme.AppCompat.Light">
+        <item name="cardCornerRadius">@dimen/size_20dp</item>
+        <item name="cardElevation">@dimen/size_20dp</item>
+        <item name="cardMaxElevation">@dimen/size_20dp</item>
+        <item name="contentPadding">@dimen/size_5dp</item>
+        <item name="cardBackgroundColor">@color/background</item>
+    </style>
+
+    <style name="MyCardViewStyle2" parent="MyCardViewStyle">
+        <item name="cardBackgroundColor">@color/background</item>
+    </style>
+
+    <style name="spinnerDropDownItemStyle" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:textSize">@dimen/size_text_20sp</item>
+    </style>
+</resources>

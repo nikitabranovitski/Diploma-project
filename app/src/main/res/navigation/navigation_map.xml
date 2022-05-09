@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_map"
+    app:startDestination="@id/mapFragment">
+
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.example.diplom.ui.home.MapFragment"
+        android:label="MapFragment"
+        tools:layout="@layout/fragment_map">
+        <action
+            android:id="@+id/action_mapFragment_to_mallInfoFragment"
+            app:destination="@id/mallInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mallInfoFragment"
+        android:name="com.example.diplom.ui.home.MallInfoFragment"
+        android:label="MallInfoFragment" >
+        <argument
+            android:name="mall"
+            app:argType="com.example.diplom.model.Mall"/>
+    </fragment>
+</navigation>

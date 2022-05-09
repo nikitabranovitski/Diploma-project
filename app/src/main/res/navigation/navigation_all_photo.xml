@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_all_photo"
+    app:startDestination="@id/allPhotoFragment">
+
+    <fragment
+        android:id="@+id/allPhotoFragment"
+        android:name="com.example.diplom.ui.allPhoto.AllPhotoFragment"
+        android:label="fragment_all_photo"
+        tools:layout="@layout/fragment_all_photo" />
+</navigation>

@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Diplom</string>
+    <string name="mapbox_access_token">pk.eyJ1IjoibWFwc3Byb2plY3QzNDQ2IiwiYSI6ImNsMTB2bWJrYTIxbzIzaWtiZWdzbWFna2IifQ.ikBqb_d4-bj0zloGt2KihA</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="sign_in">Sign In</string>
+    <string name="registration">Registration</string>
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
+    <string name="city">City</string>
+    <string name="nickname">Nickname</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="content_description_close">Close callout</string>
+    <string name="item_callout_info_text">More info</string>
+    <string name="reset_password">Reset password</string>
+    <string name="email">Email</string>
+    <string name="send">Send</string>
+    <string name="favorites">favorites</string>
+    <string name="message">message</string>
+    <string name="map">map</string>
+    <string name="my_profile">my profile</string>
+    <string name="all_photo">All Photo</string>
+    <string name="price">Price</string>
+    <string name="posts">posts</string>
+    <string name="mall">Mall</string>
+    <string name="redact">Redact</string>
+    <string name="logout">Logout</string>
+    <string name="ok">Ok</string>
+    <string name="login_warning_text">Login is not correct</string>
+    <string name="password_warning_text">Password is not correct</string>
+    <string name="password_pattern_text">Password must be at least 6 characters long.\nIt must contain numbers and uppercase character(s).</string>
+    <string name="passwords_confirmation_warning">Passwords do not match</string>
+    <string name="price_warning_text">It is not a number</string>
+    <string name="add_friend_text">Enter user email</string>
+    <string name="add_friend_confirm_button_text">Send friend request</string>
+    <string name="button_accept_text">Accept</string>
+
+</resources>

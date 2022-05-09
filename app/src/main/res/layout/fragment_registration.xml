@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.registration.RegistrationFragment">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/avatar_imageView"
+        android:layout_width="@dimen/dimen_115"
+        android:layout_height="@dimen/dimen_115"
+        android:layout_margin="@dimen/dimen_30"
+        android:src="@drawable/base_avatar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/name_editText"
+        android:layout_width="@dimen/dimen_200"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="@string/name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/avatar_imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/surname_editText"
+        android:layout_width="@dimen/dimen_200"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="@string/surname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/avatar_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/name_editText"
+        android:autofillHints="no"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/login_editText"
+        android:layout_width="@dimen/dimen_350"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:hint="@string/login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avatar_imageView"
+        android:autofillHints="emailAddress"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/login_warning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_warning_text"
+        android:textColor="@color/color_red"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@id/login_editText"
+        app:layout_constraintTop_toBottomOf="@id/login_editText" />
+
+    <EditText
+        android:id="@+id/city_editText"
+        android:layout_width="@dimen/dimen_350"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:hint="@string/city"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_editText"
+        android:autofillHints="no"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/nickname_editText"
+        android:layout_width="@dimen/dimen_350"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:hint="@string/nickname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/city_editText"
+        android:autofillHints="username"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/password_editText"
+        android:layout_width="@dimen/dimen_350"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:hint="@string/password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nickname_editText"
+        android:autofillHints="password"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/password_warning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password_pattern_text"
+        android:textColor="@color/color_red"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/password_editText"
+        app:layout_constraintStart_toStartOf="@id/password_editText"
+        app:layout_constraintTop_toBottomOf="@id/password_editText" />
+
+    <EditText
+        android:id="@+id/confirm_password_editText"
+        android:layout_width="@dimen/dimen_350"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:hint="@string/confirm_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_editText"
+        android:autofillHints="password"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/password_confirmation_warning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/passwords_confirmation_warning"
+        android:textColor="@color/color_red"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@id/confirm_password_editText"
+        app:layout_constraintTop_toBottomOf="@id/confirm_password_editText" />
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/registration"
+        android:enabled="false"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirm_password_editText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
